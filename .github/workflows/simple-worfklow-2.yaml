@@ -1,8 +1,6 @@
 name: Simple Workflow 2
 
 on:
-  push:          # Запуск при пуше в любую ветку
-  pull_request:  # Запуск при создании или обновлении Pull Request
 
 jobs:
   hello:
