@@ -1,0 +1,16 @@
+name: Simple Workflow 2
+
+on:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Greet the user
+        run: echo "Hello, ${{ github.actor }}! This is a simple GitHub Actions workflow."
+
+      - name: Indicate success
+        run: echo "✅ The workflow has completed successfully!"
