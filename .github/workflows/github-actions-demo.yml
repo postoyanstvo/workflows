@@ -2,8 +2,6 @@ name: GitHub Actions Demo test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    branches:
-      - main  # Укажите ветку, для которой вы хотите запускать процесс
 
 jobs:
   Explore-GitHub-Actions:
