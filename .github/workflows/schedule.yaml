@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: '1 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run scheduled task
+        run: echo "Scheduled task"
