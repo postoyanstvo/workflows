@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Notify deletion
-        run: echo "Branch or tag deleted: ${{ github.ref }}"
+        run: echo "Branch or tag deleted"
