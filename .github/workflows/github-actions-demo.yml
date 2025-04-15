@@ -3,7 +3,7 @@ name: On Delete Event
 on:
   delete:
     branches:
-      - actions_off  # Укажите ветку, для которой вы хотите отслеживать удаление
+      - test_trigers  
 jobs:
   handle-delete:
     runs-on: ubuntu-latest
