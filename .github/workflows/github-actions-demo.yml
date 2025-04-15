@@ -1,11 +1,7 @@
 name: Handle Delete Event
 
 on:
-  delete:
-    branches:
-      - '*'  # Отслеживать удаление всех веток
-    tags:
-      - '*'  # Отслеживать удаление всех тегов
+  fork:
 
 jobs:
   handle-delete:
