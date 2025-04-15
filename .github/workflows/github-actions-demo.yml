@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: Notify deletion
-        run: echo "Deleted reference: ${{ github.ref }}"
+        run: echo "Deleted reference"
