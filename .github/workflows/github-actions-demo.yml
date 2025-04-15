@@ -1,16 +1,16 @@
-name: On Delete Event
+name: Handle Delete Event
 
 on:
   delete:
     branches:
-      - test_trigers  
+      - '*'  # Отслеживать удаление всех веток
+    tags:
+      - '*'  # Отслеживать удаление всех тегов
+
 jobs:
   handle-delete:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Notify deletion
-        run: echo "Branch or tag deleted"
+        run: echo "Deleted reference: ${{ github.ref }}"
