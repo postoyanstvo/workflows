@@ -1,0 +1,12 @@
+name: On Pull Request Sync
+on:
+  pull_request_target:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display activity type
+        run: |
+          echo "Event name: ${{ github.event_name }}"         
+          echo "Activity type: ${{ github.event.action }}"
